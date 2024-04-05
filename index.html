@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>RA Web Development</title>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+
+                <div class="contenido-header">
+                    <h1>/RA/</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">START</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">ABOUT ME</a></li>
+                            <li><a href="#skills" onclick="seleccionar(this)">SKILLS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACT</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                </div>
+
+            </header>
+
+            <div class="presentacion">
+                <p class="bienvenida">Welcome</p>
+                <h2>I'm <span>Ricardo Ayala</span>, Web Development</h2>
+                <p class="descripcion">Beginner and self-taught web developer, trying to improve every day and incorporate new knowledge.
+                    I like to create solid frontend products, trying to give a good user experience. </p>
+                <a href="#portfolio">Portfolio</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/Imagen Ricardo.jpg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">About Me</p>
+            <h2>Hi, I'm <span>Ricardo Ayala</span> </h2>
+            <h3>Front End Developer</h3>
+            <p>These years working in the IT sector have motivated me to reinvent and prepare myself in it, with
+                the area of web development being the one that has generated the most enthusiasm in me. For this reason
+                I have decided to train myself through different courses and I would like to be able to show you the
+                different projects that I have developed, and in this way be able to put the acquired knowledge into
+                practice.</p>
+
+            <a href="Cv Ricardo.pdf" download="Cv Ricardo.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
+        </div>
+    </section>
+
+    <!-- SECCION H A B I L I D A D E S -->
+    <section class="contenedor-skills" id="skills">
+
+        <h3 class="titulo-seccion"> SKILLS </h3>
+
+        <div class="contenedor-iconos">
+
+            <div class="first-set animate">
+                <img src="img/icons8-html-5.svg" alt="Html-icon" loading="lazy" class="icon icon-card" />
+                <img src="img/icons8-css.svg" alt="Css-icon" loading="lazy" class="icon icon-card" />
+                <img src="img/icons8-javascript.svg" alt="Javascript-icon" loading="lazy" class="icon icon-card" />
+                <img src="img/gulp-svgrepo-com.svg" alt="Gulp-icon" loading="lazy" class="icon icon-card" />
+            </div>
+
+            <div class="second-set animate">
+               <!-- <img src="img/icons8-reaccionar.svg" alt="Reactive-icon" loading="lazy" class="icon icon-card" />-->
+                <img src="img/icons8-git.svg" alt="Git-icon" loading="lazy" class="icon icon-card" />
+                <img src="img/php.svg.svg" alt="" loading="lazy" class="icon icon-card" />
+                <img src="img/logo-sass.svg" alt="Sass-icon" loading="lazy" class="icon icon-card" />
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">My projects</h3>
+
+        <div class="fila">
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/Free lancer.jpg" alt="">
+
+
+                <div class="info">
+                    <a class="info-app" href="https://ricardoayala961.github.io/freelancer_inicio/" target="_blank"
+                        rel="noopener noreferrer">Web Site Free-lancer with HTML and CSS</a>
+                    <a class="info-repo" href="https://github.com/ricardoayala961/Free-lancer.git/" target="_blank"
+                        rel="noopener noreferrer">Repository</a>
+                </div>
+
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/Frontendstore.jpg" alt="">
+
+                <div class="info">
+                    <a class="info-app" href="https://ricardoayala961.github.io/Front-end-store/" target="_blank"
+                        rel="noopener noreferrer">Front end store with HTML and CSS</a>
+                    <a class="info-repo" href="https://github.com/ricardoayala961/Front-end-store.git" target="_blank"
+                        rel="noopener noreferrer">Repository</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="fila">
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/blogcafe3.jpg" alt="">
+
+                <div class="info">
+                    <a class="info-app" href="https://ricardoayala961.github.io/Blog-Cafe/" target="_blank"
+                        rel="noopener noreferrer">Blog Cafe with HTML and CSS</a>
+                    <a class="info-repo" href="https://github.com/ricardoayala961/Blog-Cafe.git" target="_blank"
+                        rel="noopener noreferrer">Repository</a>
+                </div>
+
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/FestivalMusic.jpg" alt="">
+
+                <div class="info">
+                    <a class="info-app" href="https://ricardoayala961.github.io/Music-Festival/" target="_blank"
+                        rel="noopener noreferrer">Music Festival project with SASS and Gulp</a>
+                    <a class="info-repo" href="https://github.com/ricardoayala961/Music-Festival.git" target="_blank"
+                        rel="noopener noreferrer">Repository</a>
+                </div>
+            </div>
+
+
+            <!--<div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto5.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto6.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>-->
+        </div>
+        <!-- <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto7.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto8.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto9.jpg" alt="">
+                <div class="info">
+                    <h4>Descripcion Proyecto</h4>
+                    <p>Diseño Web</p>
+                </div>
+            </div>
+        </div>-->
+    </section>
+
+    <!-- SECCTION C O N T A C T O -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contact</h3>
+        <div class="contenedor-form">
+            <form action="https://formspree.io/f/myyqayoa" method="POST">
+                <div class="fila mitad">
+                    <input id="name" type="text" placeholder="Full Name *" class="input-mitad">
+                    <input name="email" type="email" placeholder="Email Address" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Subject..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message..."
+                        class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Send Message" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>All rights reserved - 2023</p>
+        <!-- <div class="redes">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+        </div> -->
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
